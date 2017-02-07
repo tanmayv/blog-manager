@@ -2,12 +2,8 @@ import React from 'react';
 import Header from './Header.jsx'
 import ArticleThumbnail from './ArticleThumbnail.jsx'
 import ArticleContainer from './ArticleContainer.jsx'
-let ulStyle = {
-  width : 700,
-  margin : 'auto',
-  listStyle : 'none',
-  padding : 0
-}
+import {StickyContainer, Sticky} from 'react-sticky'
+import './app.scss'
 const demo_article = [
   {
     index : 0,
@@ -33,24 +29,21 @@ const demo_article = [
 ]
 
 class App extends React.Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      showArticle : -1
-    }
-  }
+
   render() {
     return (
-      <div style={{background : "#fafafa"}}>
-        <Header />
-        {this.props.children}
-      </div>
+      <StickyContainer>
+        <div style={{background : "#fafafa"}}>
+          <Header />
+          <StickyContainer>
+            {this.props.children}
+          </StickyContainer>
+        </div>
+      </StickyContainer>
+
     );
   }
 
-   onClick(index){
-     alert(index)
-   }
 }
 
 export default App;

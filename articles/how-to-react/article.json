@@ -1,0 +1,19 @@
+{
+  "heading" : "How to create an application in React",
+  "sub_heading" : "Using es6 standard of javascript.",
+  "header_image" : "http://placehold.it/600x250",
+  "content" : [
+    {
+      "html" : {
+        "inFile" : true,
+        "filename" : "htmlSnippet1.html"
+      }
+    },
+    {
+      "code" : {
+        "language" : "javascript" ,
+        "filename" : "snippet1.js"
+      }
+    }
+  ]
+}

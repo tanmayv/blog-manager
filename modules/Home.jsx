@@ -58,9 +58,6 @@ class Home extends React.Component {
 
   }
 
-   onClick(index){
-
-   }
 }
 
 export default Home;
